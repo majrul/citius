@@ -1,0 +1,11 @@
+Optional API
+------------
+- Minimize NullPointerException cases
+  if(parentobj != null) {
+     if(childobj != null) {
+
+     }
+  }
+- To be generally used in the return type of our functions to indicate
+  the function may not return any result
+
