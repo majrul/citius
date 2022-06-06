@@ -37,6 +37,11 @@ public class Example2 {
 								.collect(Collectors.toList());
 		names.forEach(System.out::println);
 		
+		String pno = phBook
+						.search("Raj")
+						.map(Contact::getMobileNumber)
+						.orElse("");
+		System.out.println(pno);
 	}
 }
 
