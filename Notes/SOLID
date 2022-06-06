@@ -1,0 +1,36 @@
+Design Patterns
+- Solutions to recurring problems in Software Development
+
+SOLID Principles
+S - Single Responsibility Principle
+O - Open Closed Principle
+L - Liskov Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+
+Maintainable, Extensible, Testable
+
+Single Responsibility Principle (SRP)
+- Any class (entity, model, ...) should not perform multiple things:
+  - There should only be one reason for any change in the code
+
+Open Closed Principle
+- Any class should be open for extension, but closed for modification
+  - Change should not be done directly in the same place
+  - using abstract classes/interfaces
+
+Liskov Substitution Principle
+- Objects of parent class can be replaced with object of it's subclass,
+  but without breaking the working of the application
+
+Interface Segregation Principle
+- classes should not be forced to implement too many functions
+  - maybe not every class will provide all the functionalities
+- instead of having fat interface, you have many slim interfaces
+
+Depenendency Inversion Principle
+- one module which depends on another module should not
+  be tightly coupled, rather they both should use some abstraction (interface)
+  to achieve loose coupling
+
+

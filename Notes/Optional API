@@ -1,0 +1,64 @@
+Optional API
+------------
+- Minimize NullPointerException cases
+  if(parentobj != null) {
+     if(childobj != null) {
+
+     }
+  }
+- To be generally used in the return type of our functions to indicate
+  the function may not return any result
+
+
+Improvement in interfaces
+-------------------------
+- An interface in Java can have non abstract (default) & static methods as well from Java 8 onwards
+  - Commonly used for sharing functionality across multiple implementations
+  - Also used for adding new features without breaking existing implementations
+
+Java's support for Multiple Inheritance
+- State, Implementation, Type
+
+Class can contain state (member variables)
+Interface can contain final state only (static+final variables)
+
+List
+ - sort (great example of a non-abstract method in an interface)
+ - ArrayList, LinkedList, etc.. need not provide duplicate implementations for the same
+
+interface A {
+	
+}
+interface B {
+	
+}
+interface C {
+	
+}
+
+class D implements A, B, C {
+	
+}
+
+D d = new D();
+A a = d;
+B b = d;
+C c = d;
+
+
+Java 8 Date & Time API
+- API with better support date and time operations
+- LocalDate, LocalTime, LocalDateTime, ZonedDateTime, etc..
+- Duration (Time) & Period (Date)
+
+UK users -> dd-MM-yyyy
+US users -> MM-dd-yyyy
+
+sample_UK.properties
+dateFormat = dd-MM-yyyy
+
+sample_US.properties
+dateFormat = MM-dd-yyyy
+
+
+
