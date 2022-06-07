@@ -24,7 +24,10 @@ public class BMI {
 	}
 	
 	public static double[] getBMIValues(List<Person> persons) {
-		
+		return persons
+				.stream()
+				.mapToDouble(BMI::calculateBMI)
+				.toArray();
 	}
 	
 	public static Person findPersonWithLowestBMI(List<Person> persons) {

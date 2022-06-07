@@ -1,6 +1,7 @@
 package com.citiustech.test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -104,5 +105,21 @@ class BMITest {
 		assertAll(
 			() -> assertEquals(70, p.getWeight()),
 			() -> assertEquals(1.7, p.getHeight()));*/
+	}
+	
+	@Test
+	public void getBMIValues_ShouldReturn_ExpectedResult() {
+		//given
+		List<Person> persons = new ArrayList<>();
+		persons.add(new Person(70, 1.7));
+		persons.add(new Person(90, 1.7));
+		persons.add(new Person(120, 1.7));
+		
+		//when
+		double[] actual = BMI.getBMIValues(persons);
+		
+		//then
+		double[] expected = {24, 31, 42};
+		assertArrayEquals(expected, actual);
 	}
 }
