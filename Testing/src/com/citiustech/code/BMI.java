@@ -15,7 +15,15 @@ public class BMI {
 		double bmi = weight / (height * height);
 		return Math.round(bmi);
 	}
-	
+
+	public static double calculateBMI(double weight, double height) {
+		if(height <= 0 || weight <= 0)
+			throw new BMIException("Incorrect Data!");
+		
+		double bmi = weight / (height * height);
+		return Math.round(bmi);
+	}
+
 	public static boolean isDietRecommended(Person person) {
 		double bmi = calculateBMI(person);
 		if(bmi < 25)
