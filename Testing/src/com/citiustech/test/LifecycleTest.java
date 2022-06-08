@@ -15,7 +15,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 //@TestMethodOrder(MethodOrderer.MethodName.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class LifecycleTest {
+public class LifecycleTest {
 
 	@BeforeAll
 	public static void beforeAll() {

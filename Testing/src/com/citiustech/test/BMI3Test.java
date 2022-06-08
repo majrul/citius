@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import com.citiustech.code.BMI;
 
-class BMITest3 {
+class BMI3Test {
 
 	@ParameterizedTest
 	@CsvSource({"70,1.7,24", "90,1.7,31", "120,1.7,42"})

@@ -19,7 +19,7 @@ import com.citiustech.code.BMI;
 import com.citiustech.code.BMIException;
 import com.citiustech.code.Person;
 
-class BMITest2 {
+class BMI2Test {
 
 	@Test
 	void isDietRecommended_ShouldReturnFalse() {

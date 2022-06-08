@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import com.citiustech.code.Calculator;
 
-class CalculatorTest {
+public class CalculatorTest {
 
 	@Test
 	void testAdd() {
